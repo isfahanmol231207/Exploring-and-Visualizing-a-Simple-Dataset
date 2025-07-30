@@ -1,49 +1,51 @@
-#  Data Exploration and Visualization with Pandas, Matplotlib & Seaborn
+#  Task 1: Exploring and Visualizing a Simple Dataset
 
-This project demonstrates the essential steps in loading, inspecting, and visualizing a dataset using Python libraries such as **pandas**, **matplotlib**, and **seaborn**. It is ideal for beginners in data science and data analysis.
+This project demonstrates how to **load, inspect, and visualize** a dataset using basic data science techniques. It focuses on understanding data distributions, relationships, and outliers using **histograms, scatter plots, and box plots**.
 
 ---
 
-## Tools and Libraries Used
+##  Objective
 
-- **Python 3**
-- **Pandas** – For data loading and manipulation
-- **Matplotlib** – For basic plotting
-- **Seaborn** – For enhanced data visualization
+Learn how to:
+- Load and inspect a dataset using `pandas`
+- Explore data using summary statistics
+- Visualize the structure and characteristics of numerical features
 
 ---
 
 ##  Dataset
-
-> A sample dataset (synthetic_asthma_dataset.csv) is used to perform exploratory data analysis.  
-Replace the dataset path with your own dataset as needed.
-
----
-
-##  Tasks Performed
-
-###  Data Loading and Inspection
-
-- Load the dataset using `pandas.read_csv()`
-- Display:
-  - The shape of the dataset
-  - Column names
-  - First few rows using `.head()`
-- Summary of dataset using:
-  - `.info()` — data types, missing values
-  - `.describe()` — statistical summary
-
-###  Data Visualization
-
-- **Scatter Plot**  
-  Show relationships between selected numerical features using `seaborn.scatterplot()` or `plt.scatter()`.
-
-- **Histograms**  
-  Show the distribution of feature values using `df.hist()` or `sns.histplot()`.
-
-- **Box Plots**  
-  Identify outliers in the data using `seaborn.boxplot()`.
+- Dataset Used: **Iris Dataset** (or any simple health dataset with numerical features)
+- Format: CSV (can also be loaded directly via `seaborn`)
+- Columns include:  
+  `Age`, `BMI`, `Family_History`, `Medication_Adherence`, `Number_of_ER_Visits`, `Peak_Expiratory_Flow`, `FeNO_Level`
 
 ---
 
+## Technologies and Skills
 
+-  **Pandas** for data loading and inspection
+- **Matplotlib** and **Seaborn** for data visualization
+-  **Descriptive statistics** using `.describe()`, `.info()`, etc.
+
+---
+
+##  Methodology
+
+1. **Load the Dataset**:
+   ```python
+   import pandas as pd
+   df = pd.read_csv('/content/synthetic_asthma_dataset.csv')  # Replace with actual file name
+
+## Basic Inspection:
+
+df.shape
+df.columns
+df.head()
+df.info()
+df.describe()
+
+## Visualizations:
+
+Histograms for each numerical feature to observe value distributions.
+Box Plots to detect outliers.
+ Scatter Plots to observe relationships between selected variables.
