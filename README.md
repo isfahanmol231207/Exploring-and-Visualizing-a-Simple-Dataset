@@ -49,3 +49,7 @@ df.describe()
 Histograms for each numerical feature to observe value distributions.
 Box Plots to detect outliers.
  Scatter Plots to observe relationships between selected variables.
+
+
+ ![Histogram](histogram.png)
+ ![box plots](box-plots.png)
